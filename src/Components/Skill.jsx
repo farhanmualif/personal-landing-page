@@ -20,17 +20,16 @@ export default function Skill() {
     ReactJS,
   ];
 
-  const skillNames = skill.map((e) => {
-    if (typeof e == "string") {
-      const splited = e.split("/");
-      const name = splited[3];
-      console.log("name: ", name);
-      const skillname = name.split(".");
-      return skillname[0];
-    } else {
-      return "";
-    }
-  });
+  const skillNames = [
+    "PHP",
+    "Express JS",
+    "Laravel",
+    "MongoDB",
+    "MySQL",
+    "NodeJS",
+    "Python",
+    "ReactJS",
+  ];
 
   return (
     <>

@@ -6,15 +6,7 @@ import WebDev from "../assets/Web Dev.jpg";
 export default function Services() {
   const myServices = [BackendDev, FrontendDev];
 
-  const servicesName = myServices.map((e) => {
-    if (typeof e == "string") {
-      const splited = e.split("/");
-      const name = splited[3].split(".")[0];
-      return name;
-    } else {
-      return "";
-    }
-  });
+  const servicesName = ["Backend Developer", "Frontend Developer"]
   return (
     <div
       id="services"
