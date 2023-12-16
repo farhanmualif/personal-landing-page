@@ -1,6 +1,7 @@
 import { Nav, Navbar, Container, Button, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import scrollTo from "../helper/scroll-to";
+import logo from "../assets/logo.png";
 
 export default function AppNavbar() {
   return (
@@ -12,7 +13,7 @@ export default function AppNavbar() {
         style={{ backgroundColor: "white" }}>
         <Container>
           <Navbar.Brand>
-            <Image src="public/logo.png" style={{ maxWidth: "4rem" }} />
+            <Image src={logo} style={{ maxWidth: "4rem" }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

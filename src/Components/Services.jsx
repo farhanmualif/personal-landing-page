@@ -1,7 +1,16 @@
 import { Col, Row, Card, Container } from "react-bootstrap";
+import BackendDev from "../assets/icon/Backend Developer.jpg";
+import FrontendDev from "../assets/icon/Frontend Developer.jpg";
+import WebDev from "../assets/icon/Web Dev.jpg";
 
 export default function Services() {
-  const myServices = ["Frontend Developer", "Backend Developer"];
+  const myServices = [BackendDev, FrontendDev];
+
+  const servicesName = myServices.map((e) => {
+    const splited = e.split("/");
+    const name = splited[4].split(".")[0];
+    return name;
+  });
   return (
     <div
       id="services"
@@ -22,14 +31,14 @@ export default function Services() {
                     className="d-flex align-items-center justify-content-center">
                     <Card.Img
                       variant="top"
-                      src={"public/icon/" + myServices[idx] + ".jpg"}
+                      src={myServices[idx]}
                       style={{ maxWidth: "7rem" }}
                     />
                   </Col>
                   <Col>
                     <Card.Body>
                       <Card.Title className="text-center">
-                        <p className="fs-3">{myServices[idx]}</p>
+                        <p className="fs-3">{servicesName[idx]}</p>
                       </Card.Title>
                     </Card.Body>
                   </Col>
@@ -54,7 +63,7 @@ export default function Services() {
                   className="d-flex align-items-center justify-content-center">
                   <Card.Img
                     variant="top"
-                    src={"public/icon/Web Dev.jpg"}
+                    src={WebDev}
                     style={{ maxWidth: "7rem" }}
                   />
                 </Col>

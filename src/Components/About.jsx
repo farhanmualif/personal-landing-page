@@ -1,4 +1,5 @@
 import { Col, Container, Image, Row } from "react-bootstrap";
+import picture1 from "../assets/picture1.png";
 
 export default function About() {
   return (
@@ -21,10 +22,7 @@ export default function About() {
           </Container>
         </Col>
         <Col>
-          <Image
-            src="/public/picture1.png"
-            style={{ height: "auto", width: "600px" }}
-          />
+          <Image src={picture1} style={{ height: "auto", width: "600px" }} />
         </Col>
       </Row>
     </div>

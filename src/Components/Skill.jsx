@@ -1,16 +1,30 @@
 import { Row, Col, Card, Container } from "react-bootstrap";
+import PHP from "../assets/icon/PHP.svg";
+import ExpressJS from "../assets/icon/ExpressJS.svg";
+import Laravel from "../assets/icon/Laravel.svg";
+import MongoDB from "../assets/icon/MongoDB.svg";
+import MySQL from "../assets/icon/MySQL.svg";
+import NodeJS from "../assets/icon/NodeJS.svg";
+import Python from "../assets/icon/Python.svg";
+import ReactJS from "../assets/icon/ReactJS.svg";
 
 export default function Skill() {
   const skill = [
-    "PHP",
-    "Laravel",
-    "Python",
-    "MySQL",
-    "MongoDB",
-    "ExpressJS",
-    "ReactJS",
-    "NodeJS",
+    PHP,
+    ExpressJS,
+    Laravel,
+    MongoDB,
+    MySQL,
+    NodeJS,
+    Python,
+    ReactJS,
   ];
+
+  const skillName = skill.map((e) => {
+    const splited = e.split("/");
+    const name = splited[4].split(".")[0];
+    return name;
+  });
 
   return (
     <>
@@ -30,14 +44,14 @@ export default function Skill() {
                     <Card.Img
                       className=""
                       variant="top"
-                      src={"public/icon/" + skill[idx] + ".svg"}
+                      src={skill[idx]}
                       style={{ maxWidth: "50px" }}
                     />
                   </Col>
                   <Col>
                     <Card.Body>
                       <Card.Title className="text-center">
-                        {skill[idx]}
+                        {skillName[idx]}
                       </Card.Title>
                     </Card.Body>
                   </Col>

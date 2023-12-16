@@ -1,6 +1,7 @@
 import { Col, Container, Image, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import scrollTo from "../helper/scroll-to";
+import figure1 from "../assets/figure1.png";
 
 export default function Jumbotron() {
   return (
@@ -10,7 +11,7 @@ export default function Jumbotron() {
           <Row>
             <Col className="text-center">
               <Image
-                src="public/figure1.png"
+                src={figure1}
                 alt="profile-image"
                 className="img-fluid"
                 style={{
