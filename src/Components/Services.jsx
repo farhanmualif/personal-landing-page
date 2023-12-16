@@ -22,7 +22,7 @@ export default function Services() {
                     className="d-flex align-items-center justify-content-center">
                     <Card.Img
                       variant="top"
-                      src={"src/assets/icon/" + myServices[idx] + ".jpg"}
+                      src={"public/icon/" + myServices[idx] + ".jpg"}
                       style={{ maxWidth: "7rem" }}
                     />
                   </Col>
@@ -54,7 +54,7 @@ export default function Services() {
                   className="d-flex align-items-center justify-content-center">
                   <Card.Img
                     variant="top"
-                    src={"src/assets/icon/Web Dev.jpg"}
+                    src={"public/icon/Web Dev.jpg"}
                     style={{ maxWidth: "7rem" }}
                   />
                 </Col>

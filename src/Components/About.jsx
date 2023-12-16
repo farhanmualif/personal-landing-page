@@ -22,7 +22,7 @@ export default function About() {
         </Col>
         <Col>
           <Image
-            src="/src/assets/picture1.png"
+            src="/public/picture1.png"
             style={{ height: "auto", width: "600px" }}
           />
         </Col>

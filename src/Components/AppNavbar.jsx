@@ -12,7 +12,7 @@ export default function AppNavbar() {
         style={{ backgroundColor: "white" }}>
         <Container>
           <Navbar.Brand>
-            <Image src="src/assets/logo.png" style={{ maxWidth: "4rem" }} />
+            <Image src="public/logo.png" style={{ maxWidth: "4rem" }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

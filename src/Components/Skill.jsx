@@ -30,7 +30,7 @@ export default function Skill() {
                     <Card.Img
                       className=""
                       variant="top"
-                      src={"src/assets/icon/" + skill[idx] + ".svg"}
+                      src={"public/icon/" + skill[idx] + ".svg"}
                       style={{ maxWidth: "50px" }}
                     />
                   </Col>

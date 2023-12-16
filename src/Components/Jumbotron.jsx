@@ -10,7 +10,7 @@ export default function Jumbotron() {
           <Row>
             <Col className="text-center">
               <Image
-                src="src/assets/figure1.png"
+                src="public/figure1.png"
                 alt="profile-image"
                 className="img-fluid"
                 style={{
