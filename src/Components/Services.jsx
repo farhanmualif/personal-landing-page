@@ -1,7 +1,7 @@
 import { Col, Row, Card, Container } from "react-bootstrap";
-import BackendDev from "../assets/icon/Backend Developer.jpg";
-import FrontendDev from "../assets/icon/Frontend Developer.jpg";
-import WebDev from "../assets/icon/Web Dev.jpg";
+import BackendDev from "../assets/Backend Developer.jpg";
+import FrontendDev from "../assets/Frontend Developer.jpg";
+import WebDev from "../assets/Web Dev.jpg";
 
 export default function Services() {
   const myServices = [BackendDev, FrontendDev];
@@ -9,7 +9,7 @@ export default function Services() {
   const servicesName = myServices.map((e) => {
     if (typeof e == "string") {
       const splited = e.split("/");
-      const name = splited[4].split(".")[0];
+      const name = splited[3].split(".")[0];
       return name;
     } else {
       return "";

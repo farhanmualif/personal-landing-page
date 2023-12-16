@@ -1,12 +1,12 @@
 import { Row, Col, Card, Container } from "react-bootstrap";
-import PHP from "../assets/icon/PHP.svg";
-import ExpressJS from "../assets/icon/ExpressJS.svg";
-import Laravel from "../assets/icon/Laravel.svg";
-import MongoDB from "../assets/icon/MongoDB.svg";
-import MySQL from "../assets/icon/MySQL.svg";
-import NodeJS from "../assets/icon/NodeJS.svg";
-import Python from "../assets/icon/Python.svg";
-import ReactJS from "../assets/icon/ReactJS.svg";
+import PHP from "../assets/PHP.svg";
+import ExpressJS from "../assets/ExpressJS.svg";
+import Laravel from "../assets/Laravel.svg";
+import MongoDB from "../assets/MongoDB.svg";
+import MySQL from "../assets/MySQL.svg";
+import NodeJS from "../assets/NodeJS.svg";
+import Python from "../assets/Python.svg";
+import ReactJS from "../assets/ReactJS.svg";
 
 export default function Skill() {
   const skill = [
@@ -20,11 +20,13 @@ export default function Skill() {
     ReactJS,
   ];
 
-  const skillName = skill.map((e) => {
+  const skillNames = skill.map((e) => {
     if (typeof e == "string") {
       const splited = e.split("/");
-      const name = splited[4].split(".")[0];
-      return name;
+      const name = splited[3];
+      console.log("name: ", name);
+      const skillname = name.split(".");
+      return skillname[0];
     } else {
       return "";
     }
@@ -55,7 +57,7 @@ export default function Skill() {
                   <Col>
                     <Card.Body>
                       <Card.Title className="text-center">
-                        {skillName[idx]}
+                        {skillNames[idx]}
                       </Card.Title>
                     </Card.Body>
                   </Col>
