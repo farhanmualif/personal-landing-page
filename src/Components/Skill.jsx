@@ -21,9 +21,13 @@ export default function Skill() {
   ];
 
   const skillName = skill.map((e) => {
-    const splited = e.split("/");
-    const name = splited[4].split(".")[0];
-    return name;
+    if (typeof e == "string") {
+      const splited = e.split("/");
+      const name = splited[4].split(".")[0];
+      return name;
+    } else {
+      return "";
+    }
   });
 
   return (
